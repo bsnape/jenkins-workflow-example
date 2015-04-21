@@ -1,5 +1,5 @@
 def clone(repo) {
-    git url: "http://github.com/bsnape/${repo}.git", branch: 'master'
+    git url: "https://github.com/bsnape/${repo}.git", branch: 'master'
 }
 
 def unit() {
