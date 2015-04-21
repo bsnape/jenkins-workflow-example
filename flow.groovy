@@ -2,7 +2,6 @@ def repo = 'example-sensu-rspec-tests'
 
 node('master') {
     clone(repo)
-    installBundler()
     bundle()
     unit()
     deploy()
@@ -30,10 +29,6 @@ def deploy() {
     stage 'Deploy'
     input message: "Are you sure you want to deploy?"
     echo 'deploy step...'
-}
-
-def installBundler() {
-    sh 'gem install bundler'
 }
 
 
