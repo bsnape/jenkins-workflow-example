@@ -13,10 +13,10 @@ def deploy() {
     echo 'deploy step...'
 }
 
-repo = 'example-sensu-rspec-tests'
+def repo = 'example-sensu-rspec-tests'
 
 
-node {
+node('master') {
     clone(repo)
     deploy()
     unit()
