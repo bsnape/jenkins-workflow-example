@@ -5,3 +5,5 @@ def deploy() {
         echo 'deploy step...'
     }
 }
+
+return this;
