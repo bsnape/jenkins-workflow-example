@@ -5,9 +5,13 @@ def unit() {
     }
 }
 
-common = load 'scripts/common.groovy'
+//common = load 'scripts/common.groovy'
 
-common.deploy()
-unit()
+//common.deploy()
+//unit()
+
+def runFlow() {
+    echo 'runFlow'
+}
 
 return this;
